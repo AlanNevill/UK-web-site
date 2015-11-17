@@ -1,0 +1,21 @@
+﻿body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.booked {
+	background-color: #dfb435;
+}
+
+
+/* center the specific table */
+#t2015 th, #t2015 td {
+    text-align: center ;
+    /*color: blue ;*/
+}
+
+/* right align the first column of the specific table */
+#t2015 th:FIRST-CHILD, #t2015 tr td:FIRST-CHILD{
+    /*COLOR:rosybrown ;*/
+    text-align: right ;
+}
+
