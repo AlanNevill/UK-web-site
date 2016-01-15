@@ -13,7 +13,7 @@
     /*color: blue ;*/
 }
 
-/* right align the first column of the specific table in booking,html, header and rows */
+/* right align the first column of the specific table in booking.html, header and rows */
 #t2015 th:FIRST-CHILD, #t2015 tr td:FIRST-CHILD{
     /*COLOR:rosybrown ;*/
     text-align: right ;
