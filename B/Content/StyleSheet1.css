@@ -2,12 +2,13 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+/* booked shading color in booking.html */
 .booked {
 	background-color: #dfb435;
 }
 
 
-/* center the specific table */
+/* center the specific table in booking.html */
 #t2015 th, #t2015 td {
     text-align: center ;
     /*color: blue ;*/
@@ -17,5 +18,11 @@
 #t2015 th:FIRST-CHILD, #t2015 tr td:FIRST-CHILD{
     /*COLOR:rosybrown ;*/
     text-align: right ;
+}
+
+/* override the bootstrap navigation bar background color */
+.navbar-inverse {
+  background-color: #dfb435;
+  border-color: #dfb435;
 }
 
