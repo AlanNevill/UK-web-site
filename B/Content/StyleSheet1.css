@@ -2,7 +2,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-/* booked shading color in booking.html */
+/* class=booked shading color in booking.html */
 .booked {
 	background-color: #dfb435;
 }
@@ -21,8 +21,69 @@
 }
 
 /* override the bootstrap navigation bar background color */
-.navbar-inverse {
-  background-color: #dfb435;
-  border-color: #dfb435;
-}
+/*.navbar-inverse {
+  background-color: #84c475;
+  border-color: #84c475;
+}*/
 
+/* override the bootstrap navigation bar text color to black */
+/*.navbar-nav>li>a {
+    color: black;
+}*/
+
+.navbar-default { background-color: #84c474; border-color: transparent; } 
+
+.navbar-default .navbar-brand { color: #020202; } 
+
+.navbar-default .navbar-brand:hover, 
+.navbar-default .navbar-brand:focus { color: #fff7f7; } 
+
+.navbar-default .navbar-text { color: #020202; } 
+
+.navbar-default .navbar-nav > li > a { color: #020202; } 
+
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:focus { color: #fff7f7; background-color: olive ;} 
+
+.navbar-default .navbar-nav > li > .dropdown-menu { background-color: #84c474; } 
+
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a { color: #020202; } 
+
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover, 
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus { color: #fff7f7; background-color: olive; } 
+
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider { background-color: #84c474; } 
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus { color: #fff7f7; background-color: olive; } 
+
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus { color: #fff7f7; background-color: olive; } 
+
+.navbar-default .navbar-toggle { border-color: transparent; } 
+
+.navbar-default .navbar-toggle:hover, 
+.navbar-default .navbar-toggle:focus { background-color: olive; } 
+
+.navbar-default .navbar-toggle .icon-bar { background-color: #020202; } 
+
+.navbar-default .navbar-collapse, 
+.navbar-default .navbar-form { border-color: #020202; } 
+
+.navbar-default .navbar-link { color: #020202; } 
+
+.navbar-default .navbar-link:hover { color: #fff7f7; } 
+
+@media (max-width: 767px) { 
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a { color: #020202; } 
+
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, 
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus { color: #fff7f7; } 
+    
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a, 
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, 
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus { color: #fff7f7; background-color: olive; } 
+
+}
