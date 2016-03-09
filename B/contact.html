@@ -12,6 +12,16 @@
    <link href="Content/StyleSheet1.css" rel="stylesheet" />
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/Sheep-icon.jpg">
+    <!-- Tracking code -->
+    <script async defer>
+	    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  	    ga('create', 'UA-22684033-2', 'auto');
+  	    ga('send', 'pageview');
+    </script>
 </head>
 
 <body>
@@ -74,7 +84,9 @@
 
         <br />
 
-        <div id="mapholder"> </div>
+        <div id="mapholder">
+            <div id="map"></div>
+        </div>
 
         <!-- End content -->
 
@@ -97,51 +109,47 @@
     <script src="Scripts/jquery-2.1.4.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
 
-    <!-- Google map script -->
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
     <script type="text/javascript">
+        // function to set up the map and add listeners to keep the map centered //
+        function initMap() {
+            // define variables //       
+            var myLatLng = new google.maps.LatLng(51.710292, -4.718159),
+                mapOptions = {
+                    zoom: 16,
+                    center: myLatLng,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                },
 
-		function showPosition(position)
-		  {
-			  lat=51.710292;
-			  lon=-4.718159;
-			  latlon = new google.maps.LatLng(lat, lon)
-			  mapholder=document.getElementById('mapholder')
-			  mapholder.style.height='400px';
-			  mapholder.style.width='100%';
-			  mapholder.style.styleFloat='center';
-			  mapholder.style.marginBottom='20px';
+                map = new google.maps.Map(document.getElementById("map"), mapOptions),
+                contentString = "Welcome to Meadow Green Farm!",
+                infowindow = new google.maps.InfoWindow({
+                    content: contentString,
+                    maxWidth: 500
+                }),
 
-			  var myOptions = {
-			      center: latlon,
-			      zoom: 16,
-				  mapTypeId: google.maps.MapTypeId.ROADMAP,
-				  mapTypeControl: false,
-				  navigationControlOptions: {style:google.maps.NavigationControlStyle.SMALL}
-			  };
+                marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map
+                });
 
-			  var map = new google.maps.Map(document.getElementById("mapholder"),myOptions);
-			  var marker = new google.maps.Marker({ position: latlon, map: map, title: "We are here!" });
-			  //marker.setIcon = "";
-		  }
-    </script>		
+            // add listener for marker click event //
+            google.maps.event.addListener(marker, "click", function () {
+                infowindow.open(map, marker);
+            });
 
+            // add listener for window resize event //
+            google.maps.event.addDomListener(window, "resize", function () {
+                var center = map.getCenter();
+                google.maps.event.trigger(map, "resize");
+                map.setCenter(center);
+            });
 
-    <script type="text/javascript">
-	    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        }
 
-  	    ga('create', 'UA-22684033-2', 'auto');
-  	    ga('send', 'pageview');
     </script>
 
-    <script type="text/javascript">
-		$(document).ready(function(){
-			showPosition();
-		});
-    </script>
+    <!-- Google map script including the key AIzaSyA0iE-I5TngqYRC5pMLC0_0jcjBp4v_4M8 and callback to initMap function -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0iE-I5TngqYRC5pMLC0_0jcjBp4v_4M8&v=3&callback=initMap"  async defer> </script>
 
 </body>
 </html>

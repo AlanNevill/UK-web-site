@@ -36,6 +36,17 @@ body {
     text-align: right ;
 }
 
+/* map styling in contact.html */
+#mapholder {
+    position:relative;
+    padding-top:50%;
+}
+#map {
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+}
 
 /* override the bootstrap navigation bar colors */
 .navbar-default { background-color: #84c474; border-color: transparent; } 
