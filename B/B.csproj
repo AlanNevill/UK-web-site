@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F8198D9A-F773-4B59-A9EC-28A4C343A4C6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>B</RootNamespace>
+    <AssemblyName>B</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="contact.html" />
+    <Content Include="contact_old.html" />
+    <Content Include="Content\Sticky-footer.css" />
+    <Content Include="sitemap.xml" />
+    <Content Include="visitorsBook.html" />
+    <Content Include="facilitiesLakesWoods.html" />
+    <Content Include="facilitiesBabies.html" />
+    <Content Include="facilitiesBeachHut.html" />
+    <Content Include="facilitiesAnimals.html" />
+    <Content Include="attractions.html" />
+    <Content Include="images\attractions\DSC02631 1000.jpg" />
+    <Content Include="images\attractions\DSC02645 1000.jpg" />
+    <Content Include="images\attractions\DSC03240 1000.jpg" />
+    <Content Include="images\attractions\DSC03256 1000.jpg" />
+    <Content Include="images\attractions\DSC03635 1000.jpg" />
+    <Content Include="images\facilities\cat 1000.jpg" />
+    <Content Include="images\facilities\DSC03576 1000.jpg" />
+    <Content Include="images\facilities\hens 1000.jpg" />
+    <Content Include="images\facilities\herding 1000.jpg" />
+    <Content Include="images\facilities\IMG_2672 1000.jpg" />
+    <Content Include="images\facilities\IMG_2690 1000.jpg" />
+    <Content Include="images\facilities\IMG_2717 1000.jpg" />
+    <Content Include="images\facilities\IMG_2819 1000.jpg" />
+    <Content Include="images\facilities\lake 4 1000.jpg" />
+    <Content Include="images\facilities\Play area 7 1000.jpg" />
+    <Content Include="images\facilities\Play area 9 1000.jpg" />
+    <Content Include="images\facilities\sheep dog 1000.jpg" />
+    <Content Include="images\facilities\toy 2 1000.jpg" />
+    <Content Include="facilitiesPlayArea.html" />
+    <Content Include="facilitiesSummary.html" />
+    <Content Include="cottages.html" />
+    <Content Include="cornflower.html" />
+    <Content Include="images\cottages\Cornflower bedroom 2 1000.jpg" />
+    <Content Include="images\cottages\Cornflower exterior 1000.jpg" />
+    <Content Include="images\cottages\Cornflower living room 5 1000.jpg" />
+    <Content Include="images\cottages\Cornflower living room 7 1000.jpg" />
+    <Content Include="images\cottages\Cornflower twin room 1 1000.jpg" />
+    <Content Include="images\cottages\Cowslip garden 3 1000.jpg" />
+    <Content Include="images\cottages\Cowslip double room 1 1000.jpg" />
+    <Content Include="images\cottages\Cowslip double room 3 1000.jpg" />
+    <Content Include="images\cottages\Cowslip garden 1 1000.jpg" />
+    <Content Include="images\cottages\Cowslip kitchen 1 1000.jpg" />
+    <Content Include="images\cottages\Cowslip living room 1 1000.jpg" />
+    <Content Include="images\cottages\Cowslip living room 4 1000.jpg" />
+    <Content Include="images\cottages\Cowslip twin room 5 1000.jpg" />
+    <Content Include="images\cottages\Meadowsweet bedroom 1 1000.jpg" />
+    <Content Include="images\cottages\Meadowsweet bedroom 4 1000.jpg" />
+    <Content Include="images\cottages\Meadowsweet double room 5 1000.jpg" />
+    <Content Include="images\cottages\Meadowsweet double room 6 1000.jpg" />
+    <Content Include="images\cottages\Meadowsweet kitchen 3 1000.jpg" />
+    <Content Include="images\cottages\Meadowsweet living room 5 1000.jpg" />
+    <Content Include="images\cottages\Meadowsweet living room 8 1000.jpg" />
+    <Content Include="images\cottages\Meadowsweet twin room 1 1000.jpg" />
+    <Content Include="images\cottages\Meadowswett exterior 3 1000.jpg" />
+    <Content Include="cowslip.html" />
+    <Content Include="images\facilities\Beach hut 1 1000.jpg" />
+    <Content Include="images\facilities\Beach hut 2 1000.jpg" />
+    <Content Include="images\facilities\books 1 1000.jpg" />
+    <Content Include="images\facilities\Chris Morrell 4 1000.jpg" />
+    <Content Include="images\facilities\DSC00736 1000.jpg" />
+    <Content Include="images\facilities\DSC01045 1000.jpg" />
+    <Content Include="images\facilities\DSC01047 1000.jpg" />
+    <Content Include="images\facilities\lake 3 1000.jpg" />
+    <Content Include="images\facilities\Play area 14 1000.jpg" />
+    <Content Include="images\facilities\trail 2 1000.jpg" />
+    <Content Include="images\visitorsBook\Cowslip_2015-07-11_1000.jpg" />
+    <Content Include="images\visitorsBook\Cowslip_2015-07-18_1000.jpg" />
+    <Content Include="images\visitorsBook\Cowslip_2015-08-01_1000.jpg" />
+    <Content Include="images\visitorsBook\Cowslip_2015-08-08_1000.jpg" />
+    <Content Include="meadowsweet.html" />
+    <Content Include="home.html" />
+    <Content Include="images\Banner_1.svg" />
+    <Content Include="images\Banner_2_obj.svg" />
+    <Content Include="images\cottages\Cowslip_garden_1.jpg" />
+    <Content Include="images\cottages\Meadowsweet_Exterior_1.jpg" />
+    <Content Include="images\facebook_32.png" />
+    <Content Include="images\home\DSC00338 1000.jpg" />
+    <Content Include="images\home\DSC00377 1000.jpg" />
+    <Content Include="images\home\DSC01006 1000.jpg" />
+    <Content Include="images\home\DSC01016 1000.jpg" />
+    <Content Include="images\home\DSC03203 1000.jpg" />
+    <Content Include="images\home\Play area 9 1000.jpg" />
+    <Content Include="images\Sheep-icon.jpg" />
+    <Content Include="images\SundayTimes_logo-home.gif" />
+    <Content Include="images\GIMP image notes.txt" />
+    <Content Include="packages.config" />
+    <Content Include="Scripts\jquery-2.1.4.min.map" />
+    <Content Include="Booking conditions 2015-05-05.pdf" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="Scripts\jquery-2.1.4.intellisense.js" />
+    <Content Include="booking.html">
+      <BrowseToURL>booking.html</BrowseToURL>
+    </Content>
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-2.1.4.js" />
+    <Content Include="Scripts\jquery-2.1.4.min.js" />
+    <Content Include="Content\StyleSheet1.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53762</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53762/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

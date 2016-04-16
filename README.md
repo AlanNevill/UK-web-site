@@ -1,2 +1,2 @@
 # UK-web-site
-Development web site
+Responsive web site

@@ -1,0 +1,5 @@
+﻿GIMP image processing notes
+
+1. Colours>auto enhance.
+2. Image>scale 1000 results in 1000 x 664
+3. Export As>JPG> quality 85%. Make sure that the file extension is lowercase jpg.
