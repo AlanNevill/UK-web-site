@@ -54,7 +54,11 @@ http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.meadowgreenfarm.uk/booking.html</loc>
+  <loc>http://www.meadowgreenfarm.uk/bookingThisYear.html</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.meadowgreenfarm.uk/bookingNextYear.html</loc>
   <changefreq>monthly</changefreq>
 </url>
 <url>
@@ -70,7 +74,7 @@ http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.meadowgreenfarm.uk/Booking%20conditions%202015-05-05.pdf</loc>
-  <changefreq>monthly</changefreq>
+  <loc>http://www.meadowgreenfarm.uk/Booking%20conditions%202016-06-28.pdf</loc>
+  <changefreq>yearly</changefreq>
 </url>
 </urlset>
