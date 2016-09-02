@@ -19,9 +19,10 @@ body {
 }
 
 
-/* class=booked shading color in booking.html */
+/* class=booked shading color in booking.html and vertical align or rowspan rows*/
 .blank {
 	background-color: #dfb435;
+    vertical-align:middle !important;
 }
 
 /* center the specific table in booking.html */
