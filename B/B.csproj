@@ -66,9 +66,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bookingNextYear.html" />
+    <Content Include="bookingThisYear.html" />
     <Content Include="contact.html" />
-    <Content Include="Content\Sticky-footer.css" />
+    <Content Include="images\Content\Sticky-footer.css" />
     <Content Include="images\cottages\Cornflower lounge 2016-04-24a 1000.jpg" />
     <Content Include="sitemap.xml" />
     <Content Include="visitorsBook.html" />
@@ -163,32 +163,34 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap-theme.css" />
-    <Content Include="Content\bootstrap-theme.min.css" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="images\Content\bootstrap-theme.css" />
+    <Content Include="images\Content\bootstrap-theme.min.css" />
+    <Content Include="images\Content\bootstrap.css" />
+    <Content Include="images\Content\bootstrap.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="images\Content\bootstrap.css.map" />
+    <Content Include="images\Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
-    <Content Include="bookingThisYear.html">
+    <Content Include="bookingNextYear.html">
       <BrowseToURL>bookingThisYear.html</BrowseToURL>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />
-    <Content Include="Content\StyleSheet1.css" />
+    <Content Include="images\Content\StyleSheet1.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Content\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

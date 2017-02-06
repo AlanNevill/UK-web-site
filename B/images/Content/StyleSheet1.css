@@ -1,0 +1,110 @@
+﻿/* StyleSheet1.css */
+
+/* Google web font */ 
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* apply the h4 settings from bootstrap to the unordered list items used in rows within cottages.html */
+.col-md-3 ul li {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.1;
+    color: inherit;
+    margin-top: 5px;
+    /*margin-bottom: 10px;*/
+}
+
+
+/* class=booked shading color in booking.html and vertical align or rowspan rows*/
+.blank {
+	background-color: #dfb435;
+    vertical-align:middle !important;
+}
+
+/* center the specific table in booking.html */
+#t2016 th, #t2016 td {
+    text-align: center ;
+    /*color: blue ;*/
+}
+
+/* right align the first column of the specific table in booking.html, header and rows */
+#t2016 th:FIRST-CHILD, #t2016 tr td:FIRST-CHILD{
+    /*COLOR:rosybrown ;*/
+    text-align: right ;
+}
+
+/* map styling in contact.html */
+#mapholder {
+    position:relative;
+    padding-top:50%;
+}
+#map {
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+}
+
+/* override the bootstrap navigation bar colors */
+.navbar-default { background-color: #84c474; border-color: transparent; } 
+
+.navbar-default .navbar-brand { color: #020202; } 
+
+.navbar-default .navbar-brand:hover, 
+.navbar-default .navbar-brand:focus { color: #fff7f7; } 
+
+.navbar-default .navbar-text { color: #020202; } 
+
+.navbar-default .navbar-nav > li > a { color: #020202; } 
+
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:active, 
+.navbar-default .navbar-nav > li > a:focus { color: #fff7f7; background-color: olive ;} 
+
+.navbar-default .navbar-nav > li > .dropdown-menu { background-color: #84c474; } 
+
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a { color: #020202; } 
+
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover, 
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus { color: #fff7f7; background-color: olive; } 
+
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider { background-color: #84c474; } 
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:active, 
+.navbar-default .navbar-nav > .active > a:focus { color: #fff7f7; background-color: olive; } 
+
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus { color: #fff7f7; background-color: olive; } 
+
+.navbar-default .navbar-toggle { border-color: transparent; } 
+
+.navbar-default .navbar-toggle:hover, 
+.navbar-default .navbar-toggle:focus { background-color: olive; } 
+
+.navbar-default .navbar-toggle .icon-bar { background-color: #020202; } 
+
+.navbar-default .navbar-collapse, 
+.navbar-default .navbar-form { border-color: #020202; } 
+
+.navbar-default .navbar-link { color: #020202; } 
+
+.navbar-default .navbar-link:hover { color: #fff7f7; } 
+
+@media (max-width: 767px) { 
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a { color: #020202; } 
+
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, 
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus { color: #fff7f7; } 
+    
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a, 
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, 
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus { color: #fff7f7; background-color: olive; } 
+
+}
