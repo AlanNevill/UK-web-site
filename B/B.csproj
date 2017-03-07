@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="sheepWeights.html" />
     <Content Include="sheepNames.html" />
     <Content Include="bookingThisYear.html" />
     <Content Include="contact.html" />
